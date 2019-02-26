@@ -1,0 +1,18 @@
+.Hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -125px;
+}
+
+.hero-text-question {
+  color: antiquewhite;
+  float: left;
+}
+
+.selector {
+  color: antiquewhite;
+  float: left;
+  background: transparent;
+}

@@ -1,20 +1,21 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import MenuItem from '@material-ui/core/MenuItem'
 import FormControl from '@material-ui/core/FormControl'
 import Select from '@material-ui/core/Select'
-import './hero.css'
+import './Hero.css'
 
-export default class Hero extends Component {
+class Hero extends Component {
   state = {
     selection: ''
   }
 
   handleChange = event => {
-    this.setState({ [event.target.name]: event.target.value })
+    this.props.history.push(`/${event.target.value}`)
   }
 
   render() {
-    console.log(this.state.selection)
+    console.log(this.props.history)
     return (
       <div className="Hero">
         <FormControl>
@@ -42,3 +43,5 @@ export default class Hero extends Component {
     )
   }
 }
+
+export default withRouter(Hero)

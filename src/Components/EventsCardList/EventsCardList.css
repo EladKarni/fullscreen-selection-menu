@@ -1,0 +1,17 @@
+#EventCards {
+  align-content: center;
+  min-height: 375px;
+  overflow-y: hidden;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+}
+
+.eventWrapper {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}

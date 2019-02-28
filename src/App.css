@@ -1,9 +1,9 @@
 .App {
-  background-color: #3e5cc2;
+  background-color: #23467fd1;
   width: 100%;
-  height: auto;
-  bottom: 0px;
-  top: 0px;
+  height: 100%;
+  bottom: 0;
+  top: 0;
   left: 0;
   position: absolute;
 }

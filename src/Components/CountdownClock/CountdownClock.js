@@ -1,4 +1,5 @@
 import React from 'react'
+import './CountdownClock.css'
 
 export default function CountdownClock() {
   return (

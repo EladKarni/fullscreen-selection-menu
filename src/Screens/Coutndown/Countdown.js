@@ -3,10 +3,10 @@ import { withRouter } from 'react-router-dom'
 import Data from '../../Util/DataRequests'
 import CalculateTime from '../../Util/CalculateTime'
 import EventsCardList from '../../Components/EventsCardList/EventsCardList'
+import CountdownClock from '../../Components/CountdownClock/CountdownClock'
 import moment from 'moment'
 
 import './Countdown.css'
-import CountdownClock from '../../Components/CountdownClock/CountdownClock'
 
 class Countdown extends Component {
   constructor() {
@@ -26,7 +26,7 @@ class Countdown extends Component {
 
   render() {
     return (
-      <div>
+      <div className="clock-wrap">
         <h1>{this.props.match.params.event} Will Start In:</h1>
         <CountdownClock />
         {this.state.events !== null ? (

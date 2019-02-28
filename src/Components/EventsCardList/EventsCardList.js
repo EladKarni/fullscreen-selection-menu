@@ -4,17 +4,15 @@ import './EventsCardList.css'
 
 export default function EventsCardList(props) {
   return (
-    <div id="eventWrapper">
-      <div id="EventCards">
-        <div id="card-wrapper">
-          <ul style={{ listStyle: 'none' }}>
-            {props.cardList.map(card => (
-              <li key={card.id}>
-                <EventCard card={card} />
-              </li>
-            ))}
-          </ul>
-        </div>
+    <div id="EventCards">
+      <div id="card-wrapper">
+        <ul style={{ listStyle: 'none' }}>
+          {props.cardList.map(card => (
+            <li key={card.id}>
+              <EventCard card={card} />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   )
